@@ -8,39 +8,40 @@ body.style.justifyContent = `space-between`;
 body.style.alignItems = `center`;
 body.style.margin = "0";
 
-const sonho2 = document.createElement("header");
-sonho2.style.color = "black";
-sonho2.style.backgroundColor = "gray";
-sonho2.style.width = "100%";
-sonho2.style.height = "50px";
-sonho2.style.display = "flex";
-sonho2.style.alignItems = "center";
-sonho2.style.justifyContent = "space-evenly";
-body.appendChild(sonho2);
+const header = document.createElement("header");
+header.style.backgroundColor = "brown";
+header.style.width = "100%";
+header.style.height = "50px";
+header.style.display = "flex";
+header.style.alignItems = "center";
+header.style.justifyContent = "space-between";
+body.appendChild(header);
 
 const button2 = document.createElement("button");
-button2.style.backgroundColor = "black";
-button2.style.color = "white";
+button2.style.backgroundColor = "white";
+button2.style.color = "black";
 button2.textContent = ("Reset");
+button2.style.marginLeft = `50px`
 button2.addEventListener("click", function(){
-    window.location = "https://thaianysantos.github.io/AVT.JS/";
+    window.location = "http://127.0.0.1:5500/index.html";
 })
-sonho2.appendChild(button2)
+header.appendChild(button2)
 
 const button3 = document.createElement("button");
-button3.style.backgroundColor = "black";
-button3.style.color = "white";
+button3.style.backgroundColor = "white";
+button3.style.color = "black";
 button3.textContent = ("Git");
+button3.style.marginRight = `50px`
 button3.addEventListener("click", function(){
-    window.open("https://github.com/ThaianySantos/AVT.JS.git","_blank")
+    window.open("https://github.com/amandalourdes/ATV-JS","_blank")
 })
-sonho2.appendChild(button3)
+header.appendChild(button3)
 
 const div = document.createElement(`div`);
 div.style.height = `500px`;
-div.style.width = `900px`;
+div.style.width = `100%`;
 div.style.flexDirection = "column";
-div.style.backgroundColor = `gray`;
+div.style.backgroundColor = `brown`;
 div.style.display = `flex`;
 div.style.justifyContent = `center`;
 div.style.alignItems = `center`;
@@ -48,7 +49,7 @@ body.appendChild(div);
 
 const texto = document.createElement("h1");
 texto.style.color = "black"
-texto.textContent = "Atividade de Programação WEB";
+texto.textContent = "ATIVIDADE DE PROGRAMAÇÃO WEB";
 div.appendChild(texto);
 
 const input1 = document.createElement("input");
@@ -90,8 +91,8 @@ div.appendChild(input4);
 
 
 const button = document.createElement("button");
-button.style.backgroundColor = "black";
-button.style.color = "white";
+button.style.backgroundColor = "white";
+button.style.color = "black";
 button.textContent = ("Calcular a média");
 button.addEventListener("click", function calcular() {
     const nome = input1.value;
@@ -116,21 +117,21 @@ div.appendChild(button);
 
 const resultado = document.createElement("div");
 resultado.style.marginTop = "20px";
-resultado.style.color = "blue";
+resultado.style.color = "black";
 resultado.style.fontSize = "18px";
 resultado.style.alignItems = `center`
 div.appendChild(resultado);
 
-const sonho = document.createElement("footer");
-sonho.style.color = "black";
-sonho.style.backgroundColor = "gray";
-sonho.style.width = "100%";
-sonho.style.height = "50px";
-sonho.style.display = "flex";
-sonho.style.alignItems = "center";
-sonho.style.justifyContent = "center";
-sonho.textContent = "Não estrague meu sonho, me dê nota MÁXIMA!";
-body.appendChild(sonho);
+const footer = document.createElement("footer");
+footer.style.color = "black";
+footer.style.backgroundColor = "brown";
+footer.style.width = "100%";
+footer.style.height = "50px";
+footer.style.display = "flex";
+footer.style.alignItems = "center";
+footer.style.justifyContent = "center";
+footer.textContent = "Obrigado(a) por utilizar nosso site, volte sempre.";
+body.appendChild(footer);
 
 
 
