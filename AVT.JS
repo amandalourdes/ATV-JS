@@ -23,7 +23,7 @@ button2.style.color = "black";
 button2.textContent = ("Reset");
 button2.style.marginLeft = `50px`
 button2.addEventListener("click", function(){
-    window.location = "http://127.0.0.1:5500/index.html";
+    window.location = "https://amandalourdes.github.io/ATV-JS/";
 })
 header.appendChild(button2)
 
