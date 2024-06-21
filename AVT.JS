@@ -33,7 +33,7 @@ button3.style.color = "black";
 button3.textContent = ("Git");
 button3.style.marginRight = `50px`
 button3.addEventListener("click", function(){
-    window.open("https://github.com/amandalourdes/ATV-JS","_blank")
+    window.open("https://amandalourdes.github.io/ATV-JS/","_blank")
 })
 header.appendChild(button3)
 
